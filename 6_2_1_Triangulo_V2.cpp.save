@@ -1,0 +1,48 @@
+/************************************************
+* Programa: Triangulo (Versión corregida)
+*
+* Descripción:
+*   Este programa escribe el borde de un triángulo
+*   aproximadamente equilátero, usando asteriscos.
+*   La altura del triángulo, en línea de texto,
+*   se lee como dato
+*************************************************/
+
+#include <stdio.h>
+
+int main(){
+    int altura;
+
+  /*-- Leer altura deseada --*/
+  print(" ¿Altura? " );
+  scanf( "%d", &altura
+
+  /*-- Escribir el vértice superior --*/
+
+    for (int k =1; k <= N-1; k++){
+      printf( " " );
+    }
+
+    printf( "*\n" );
+
+  /*-- Imprimir los bordes laterales --*/
+
+    for (int k = 2; k <= N-1; k++){
+      for (int j = 1; j <= N-k; j++){
+        printf( " " );
+      }
+      printf( "*" );
+      for (int j = 1; j <= 2*k-3; j++) {
+      printf( " " );
+      }
+    printf( "*\n" );
+    }
+
+  /*-- Imprimir el borde inferior --*/
+
+    printf( "*" );
+    for (int k = 1; k <= N-1 ; k++){
+      printf( " *" );
+    }
+    printf( "\n" );
+}

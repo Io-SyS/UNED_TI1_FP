@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main (){
+
+  int altura;
+  int nivel = 1;
+
+  printf( "Indica el número de asteríscos\n" );
+  scanf("%d", &altura);
+
+    for (int k = nivel; k <= altura; k++){
+      for (int j = 1; j <= altura-k; j++){
+        printf(" ");
+      }
+        for (int n = 1 ; n <= k ; n++){
+          printf("* ");
+        }
+        printf("\n");
+
+    }
+    for (int n = k-1; n >= 1 ; n--){
+      for (int p = 1; j <= altura-n; p--){
+                printf(" ");
+      }
+        for (int n = 1 ; n <= k ; n++){
+          printf("* ");
+        }
+        printf("\n");
+  }

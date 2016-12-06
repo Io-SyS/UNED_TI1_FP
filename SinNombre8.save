@@ -1,0 +1,76 @@
+/************************************************
+* Programa: Palindromo
+*
+* Descripción:
+*   Este programa comprueba si una frase es
+*   un palíndromo
+*************************************************/
+
+#include <studio.h>
+#include <ctype.h>
+
+const char Fin = '.';
+const int Maximo = 100;
+typedef char TipoCadena[Maximo];
+
+/*===========================================
+  Procedimiento para leer una frase acabada
+  en punto (.) y dejarla en el argumento.
+  Sólo se guardan en el vector argumento las
+  letras a..z mayúsculas o minúsculas
+  incluyendo la ñ y Ñ y el punto final.
+============================================*/
+
+void LeerTexto( TipoCadena texto ) {
+  int longitud = 0;
+  char caracter = ' ';
+  }
+
+  /*-- Leer y guardar sólo las letras de la frase --*/
+  printf( "¿Frase acabada en punto (.)? \n");
+  while ((caracter != Fin) && (longitud < Maximo )) {
+  scanf("%c", &caracter);
+    if(((caracter>='a') && (caracter<='z')) ||
+      ((caracter>='A') && (caracter<='Z')) ||
+        (caracter==Fin) || (caracter =='ñ') ||
+        (caracter=='Ñ')){
+      texto[longitud] = toupper(caracter);
+      longitud++;
+    }
+  }
+}
+
+/*=================================================
+  Función que comprueba si coinciden ls letras
+  posiciones simétricas: La frase es un palíndromo
+===================================================*/
+
+bool Simetrico( const TipoCadena Texto ){
+  int i, j;
+  
+  /*-- 1º: Buscar el punto final --*/
+  j = 0;
+  while ((Texto[j] !=Fin) && (j<Maximo)){
+    j++;
+  }
+  j--;
+  /*-- 2º: Comprobar igualdad entre simétricos --*/
+  i = 0;
+  while ((i < j) && (Texto[i] == Texto[j])) {
+    i++;
+    j--;
+  }
+  /*-- 3º: Es palíndromo si coincide todo --*/
+  return i>=j;
+}
+
+/*===================
+  Programa principal
+ ===================*/
+ 
+ int main(){
+    TipoCadena frase;
+    LeerTexto( frase );
+    if(Simetrico( fras
+    
+ }
