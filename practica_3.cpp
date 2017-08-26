@@ -1,9 +1,9 @@
 /**************************************
-* NOMBRE: #Aurelio#
-* PRIMER APELLIDO: #Baeza#
-* SEGUNDO APELLIDO: #Romero#
-* DNI: #44582947#
-* EMAIL: #abaeza19@alumno.uned.es#
+* NOMBRE: 
+* PRIMER APELLIDO: 
+* SEGUNDO APELLIDO: 
+* DNI: 
+* EMAIL:
 **************************************/
 
 #include <stdio.h>
